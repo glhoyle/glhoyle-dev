@@ -12,7 +12,7 @@ object ScalaJSExample {
     // dom.document.getElementById("scalajsShoutOut").textContent = SharedMessages.itWorks
     println("Call the react stuff.")
     ReactDOM.render(
-      h1("Hello, world!"),
+      h1(""),
       dom.document.getElementById("root")
     )
 
