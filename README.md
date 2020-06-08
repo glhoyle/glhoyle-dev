@@ -1,3 +1,3 @@
-# glhoyle-dev
+# glhoyle.dev
 
-Website code for personal website
+Code for my personal website. Created by Gracen Hoyle, 2020.
