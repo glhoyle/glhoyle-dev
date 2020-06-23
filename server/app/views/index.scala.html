@@ -1,8 +1,92 @@
 @(message: String)
 
-@main("glhoyle.dev") {
+@main("Gracen Hoyle, Computer Dev") {
+  <input type="hidden" id="mainDiv" value="">
+  <div id="nav">
+    <h3>Gracen Hoyle, Developer</h3>
+    <ul>
+      <li onclick="showHome()">Home</li>
+      <li onclick="showAbout()">About</li>
+      <li onclick="showProjects()">Projects</li>
+      <li onclick="showResume()">Resume</li>
+      <li onclick="showContact()">Contact</li>
+    </ul>
+  </div>
+  <br>
+  <hr>
 
-  <h2>Site Under Construction</h2>
+  <div id="content">
+    <div id="home">
+      <h3>The Abridged Version</h3>
+      <p>
+        🎓 Junior at Trinity University
+        <br>
+        💾 Computer Science Major with a Minor in Classical Studies
+        <br>
+        🌻 Orientation Team Captain for 2020-2021
+        <br>
+        📝 Currently a Marketing Intern at <a href="http://filestack.com">Filestack</a>
+      </p>
+      <p>
+        👷‍♀️ <em>Website is currently under construction. Sorry for the mess!</em>
+      </p>
+    </div>
 
-  <div id="root"></div>
+    <div id="about">
+      <h3>About Me</h3>
+      <p>
+        <img src="@routes.Assets.versioned("images/glhoyle.png")" alt="Photo of Gracen Hoyle.">
+        My name is Gracen Hoyle, and I am a rising junior at Trinity University in San Antonio, Texas.
+        I am a computer science major and a classical studies minor, with an interest in game development and
+        web applications.
+        <br>
+        In my spare time, I enjoy playing video games and creating digital and traditional art.
+        I firmly believe that technical knowledge and creativity go hand in hand, and that computer science is an
+        inherently artistic field focused on the creation of software and content. I'm also very interested in the field
+        of virtual reality and the potential it holds, both for creating fiction and helping people explore the world
+        around them.
+      </p>
+      <h3>Notable Experience</h3>
+      <p>
+        I am currently one of four Trinity University Orientation Team captains for the 2020-2021 academic year.
+        Along with my fellow captains, I help incoming students and their families adjust to life at Trinity and
+        get acquainted with the campus.
+        <br>
+        I have a few other roles while I'm on campus. I work as a marketing intern in Trinity's Center for Experiental
+        Learning and Career Success, helping to advertise events and seminars hosted by the office. This coming semester,
+        I will be working at the campus newspaper, the Trinitonian, as a graphic designer and web development assistant.
+        In the past semester, I worked as a peer tutor for the Trinity chapter of the Association for Computer Machinery
+        tutoring first-year computer science students.
+        <br>
+        This summer, I am working as a marketing intern at Filestack in San Antonio. I'm very excited to be a part of their
+        team, and can't wait to see where this role takes me this summer!
+        <br><br> 
+        To see my full resume, click the <b>Resume</b> button in the navigation bar.
+      </p>
+      <p><em>Page under construction.</em></p>
+    </div>
+
+    <div id="projects">
+      <h3>My Projects</h3>
+      <p><em>Page under construction.</em></p>
+    </div>
+
+    <div id="resume">
+      <h3>Resume</h3>
+      <p>
+        This will always be the most up to date version of my resume.
+      </p>
+      <iframe src="https://drive.google.com/file/d/1GCshCfg5pcmDU-2FSB_0IBAkO0LSmfd9/preview" width="800" height="1000"></iframe>
+    </div>
+
+    <div id="contact">
+      <h3>Contact Me</h3>
+      <p>These are my active social media channels. Feel free to reach out to me any time!</p>
+      <ul>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/gracen-hoyle/">Gracen Hoyle</a></li>
+        <li>Github: <a href="https://github.com/glhoyle/">glhoyle</a></li>
+        <li>Email: ghoyle@@trinity.edu</li>
+      </ul>
+    </div>
+  </div>
 }

@@ -21,6 +21,9 @@ lazy val server = (project in file("server")).settings(commonSettings).settings(
   dependsOn(sharedJvm)
 
 lazy val client = (project in file("client")).settings(commonSettings).settings(
+  name := "Play-Videos-Client",
+  addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
+  scalacOptions += "-P:scalajs:sjsDefinedByDefault",
   scalaJSUseMainModuleInitializer := true,
   libraryDependencies ++= Seq(
     "org.scala-js" %%% "scalajs-dom" % "0.9.5",
@@ -35,7 +38,12 @@ lazy val client = (project in file("client")).settings(commonSettings).settings(
 lazy val shared = crossProject(JSPlatform, JVMPlatform)
   .crossType(CrossType.Pure)
   .in(file("shared"))
-  .settings(commonSettings)
+  .settings(
+    name := "Play-Videos-Shared",  
+    commonSettings,
+  	libraryDependencies ++= Seq(
+			"com.typesafe.play" %%% "play-json" % "2.8.1"
+	))
 lazy val sharedJvm = shared.jvm
 lazy val sharedJs = shared.js
 

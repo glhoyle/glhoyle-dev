@@ -11,9 +11,13 @@
     <!-- Libraries for React -->
     <script src="https://unpkg.com/react@@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@@16/umd/react-dom.development.js" crossorigin></script>
+
+    <meta name="description" content="Development and projects done by student programmer Gracen Hoyle.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Sanchez&display=swap" rel="stylesheet">
   </head>
   <body>
     @content
-    @scalajs.html.scripts("client", routes.Assets.versioned(_).toString, name => getClass.getResource(s"/public/$name") != null)
+    @scalajs.html.scripts("Play-Videos-Client", routes.Assets.versioned(_).toString, name => getClass.getResource(s"/public/$name") != null)
   </body>
 </html>
