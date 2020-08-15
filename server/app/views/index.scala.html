@@ -3,7 +3,7 @@
 @main("Gracen Hoyle, Computer Dev") {
   <input type="hidden" id="mainDiv" value="">
   <div id="nav">
-    <h3>Gracen Hoyle, Developer</h3>
+    <img src="@routes.Assets.versioned("images/gracen_logo_final.png")" alt="Gracen Hoyle.">
     <ul>
       <li onclick="showHome()">Home</li>
       <li onclick="showAbout()">About</li>
@@ -17,29 +17,30 @@
 
   <div id="content">
     <div id="home">
-      <h3>The Abridged Version</h3>
       <p>
+        <img src="@routes.Assets.versioned("images/ghoyle_profile.jpg")" alt="Photo of Gracen Hoyle.">
+        <br>
+        <em>Photo of Gracen Hoyle.</em>
+        <br><br>
         🎓 Junior at Trinity University
         <br>
         💾 Computer Science Major with a Minor in Classical Studies
         <br>
-        🌻 Orientation Team Captain for 2020-2021
+        🎨 Illustrator and Web Assistant for the 2020-2021 Trinitonian
         <br>
-        📝 Currently a Marketing Intern at <a href="http://filestack.com">Filestack</a>
-      </p>
-      <p>
-        👷‍♀️ <em>Website is currently under construction. Sorry for the mess!</em>
+        📝 Summer 2020 Marketing Intern at <a href="http://filestack.com">Filestack</a>
+        <br>
+        🎮 Aspiring Game Developer and Storyteller
       </p>
     </div>
 
     <div id="about">
       <h3>About Me</h3>
       <p>
-        <img src="@routes.Assets.versioned("images/glhoyle_profile.jpg")" alt="Photo of Gracen Hoyle.">
-        My name is Gracen Hoyle, and I am a rising junior at Trinity University in San Antonio, Texas.
+        My name is Gracen Hoyle, and I am a junior at Trinity University in San Antonio, Texas.
         I am a computer science major and a classical studies minor, with an interest in game development and
         web applications.
-        <br>
+        <br><br>
         In my spare time, I enjoy playing video games and creating digital and traditional art.
         I firmly believe that technical knowledge and creativity go hand in hand, and that computer science is an
         inherently artistic field focused on the creation of software and content. I'm also very interested in the field
@@ -48,27 +49,53 @@
       </p>
       <h3>Notable Experience</h3>
       <p>
-        I am currently one of four Trinity University Orientation Team captains for the 2020-2021 academic year.
-        Along with my fellow captains, I help incoming students and their families adjust to life at Trinity and
-        get acquainted with the campus.
-        <br>
-        I have a few other roles while I'm on campus. I work as a marketing intern in Trinity's Center for Experiental
+        I have a few roles while I'm on campus. I work as a marketing intern in Trinity's Center for Experiental
         Learning and Career Success, helping to advertise events and seminars hosted by the office. This coming semester,
-        I will be working at the campus newspaper, the Trinitonian, as a graphic designer and web development assistant.
+        I will be working at the campus newspaper, the Trinitonian, as a graphic designer and web assistant.
         In the past semester, I worked as a peer tutor for the Trinity chapter of the Association for Computer Machinery
         tutoring first-year computer science students.
-        <br>
-        This summer, I am working as a marketing intern at Filestack in San Antonio. I'm very excited to be a part of their
-        team, and can't wait to see where this role takes me this summer!
+        <br><br>
+        This past summer, I worked as a marketing intern at Filestack in San Antonio. I did search engine optimization and
+        some web development in Javascript, creating a new chatbot for the Filestack website in HubSpot as well as designing and coding
+        a Zoom background generator to take existing photos and modify them for use in Zoom.
+        <br><br>
+        I have an interest in game development, with many of my past projects being gamified in some way. This coming Fall semester, 2020, I will
+        be taking a game development class in order to hopefully expand my ability to code in C#, as well as in developing independent
+        game projects.
         <br><br> 
-        To see my full resume, click the <b>Resume</b> button in the navigation bar.
+        To see my full resume, <a onclick="showResume()">click here.</a>
       </p>
-      <p><em>Page under construction.</em></p>
     </div>
 
     <div id="projects">
       <h3>My Projects</h3>
-      <p><em>Page under construction.</em></p>
+      <div class="projectDiv" onclick>
+        <a href="https://github.com/glhoyle/glhoyle-dev"><b>glhoyle.dev</b></a>
+        <br>
+        <em>May 2020 - Present</em>
+        <br>
+        <p>
+          This is the GitHub repository for this website!
+        </p>
+      </div>
+      <div class="projectDiv">
+        <a href="https://github.com/ckendric/CSCI3345-DragonHordeClicker"><b>Dragon Horde Clicker</b></a>
+        <br>
+        <em>January 2020 - May 2020</em>
+        <br>
+        <p>
+          This project is an incremental clicker game created for Web Application Design, Spring 2020.
+        </p>
+      </div>
+      <div class="projectDiv">
+        <a href="https://github.com/glhoyle/Enclippy"><b>Enclippy</b></a>
+        <br>
+        <em>January 2020 - May 2020</em>
+        <br>
+        <p>
+          This project is a command-line based file encryption software created for Cybersecurity, Spring 2020.
+        </p>
+      </div>
     </div>
 
     <div id="resume">
