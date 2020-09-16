@@ -25,6 +25,7 @@ object glhoyleDevJS {
         document.getElementById("home").asInstanceOf[js.Dynamic].hidden = false
         document.getElementById("about").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("projects").asInstanceOf[js.Dynamic].hidden = true
+        document.getElementById("portfolio").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("resume").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("contact").asInstanceOf[js.Dynamic].hidden = true
   }
@@ -34,6 +35,7 @@ object glhoyleDevJS {
         document.getElementById("home").asInstanceOf[js.Dynamic].hidden = false
         document.getElementById("about").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("projects").asInstanceOf[js.Dynamic].hidden = true
+        document.getElementById("portfolio").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("resume").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("contact").asInstanceOf[js.Dynamic].hidden = true
   }
@@ -43,6 +45,7 @@ object glhoyleDevJS {
         document.getElementById("home").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("about").asInstanceOf[js.Dynamic].hidden = false
         document.getElementById("projects").asInstanceOf[js.Dynamic].hidden = true
+        document.getElementById("portfolio").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("resume").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("contact").asInstanceOf[js.Dynamic].hidden = true
   }
@@ -52,6 +55,17 @@ object glhoyleDevJS {
         document.getElementById("home").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("about").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("projects").asInstanceOf[js.Dynamic].hidden = false
+        document.getElementById("portfolio").asInstanceOf[js.Dynamic].hidden = true
+        document.getElementById("resume").asInstanceOf[js.Dynamic].hidden = true
+        document.getElementById("contact").asInstanceOf[js.Dynamic].hidden = true
+  }
+
+    @JSExportTopLevel("showPortfolio")
+    def showPortfolio(): Unit = {
+        document.getElementById("home").asInstanceOf[js.Dynamic].hidden = true
+        document.getElementById("about").asInstanceOf[js.Dynamic].hidden = true
+        document.getElementById("projects").asInstanceOf[js.Dynamic].hidden = true
+        document.getElementById("portfolio").asInstanceOf[js.Dynamic].hidden = false
         document.getElementById("resume").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("contact").asInstanceOf[js.Dynamic].hidden = true
   }
@@ -61,6 +75,7 @@ object glhoyleDevJS {
         document.getElementById("home").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("about").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("projects").asInstanceOf[js.Dynamic].hidden = true
+        document.getElementById("portfolio").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("resume").asInstanceOf[js.Dynamic].hidden = false
         document.getElementById("contact").asInstanceOf[js.Dynamic].hidden = true
   }
@@ -70,6 +85,7 @@ object glhoyleDevJS {
         document.getElementById("home").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("about").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("projects").asInstanceOf[js.Dynamic].hidden = true
+        document.getElementById("portfolio").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("resume").asInstanceOf[js.Dynamic].hidden = true
         document.getElementById("contact").asInstanceOf[js.Dynamic].hidden = false
   }
