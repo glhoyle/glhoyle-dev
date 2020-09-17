@@ -1,19 +1,113 @@
 html {
     overflow-y:scroll;
   }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
   
 body {
     background: #ffffff;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Raleway', sans-serif;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Sanchez', serif;
+  font-family: 'Sora', sans-serif;
+  color: #130220;
+  text-shadow: 1px 1px 2px #e8bef3;
+}
+
+.quoteText {
+  font-size: 32px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #130220;
+  text-shadow: 1px 1px 2px #e8bef3;
+}
+
+.aboutText {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+#nav {
+  padding-top: 2%;
+  width: 80%;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+#nav ul {
+  overflow: hidden;
+  font-size: 16px;
+  list-style-type: none;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+#nav ul li {
+  float: center;
+  display: block;
+  padding: 2px;
+  padding-right: 14px;
+  font-family: 'Sora', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #130220;
+  text-shadow: 1px 1px 2px #cd97db;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#nav ul li:hover, a:hover {
+  color: #030005;
+  text-shadow: 1px 1px 2px #b630d8;
+  cursor: pointer;
 }
 
 #logo {
-    max-width: 60%;
+    max-width: 45%;
     height: auto;
+}
+
+hr {
+  background-color: #130220;
+  width: 80%;
+  margin: 30px;
+
+}
+
+#resume iframe {
+  justify-content: center;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 5%;
+}
+
+p img {
+  width: 40%;
+  float: left;
+  border-radius: 10px;
+  margin: 25px;
+  
+}
+
+a {
+  text-decoration: underline;
+}
+
+#content {
+  margin: auto;
+  padding-top: 2%;
+  display: flex;
+  width: 60%;
 }
 
 #portfolio {
@@ -51,3 +145,19 @@ h1, h2, h3, h4 {
     display: flex;
   }
   
+  div.socials {
+    margin: 50px;
+    border: none;
+    float: left;
+    width: 180px;
+    vertical-align: middle;
+  }
+  
+  div.socials img:hover {
+    opacity: 0.7;
+  }
+  
+  div.socials img {
+    width: 100%;
+    height: auto;
+  }

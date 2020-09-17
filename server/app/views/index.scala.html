@@ -2,248 +2,269 @@
 
 @main("Gracen Hoyle, Computer Dev") {
   <input type="hidden" id="mainDiv" value="">
-  <div id="nav">
-    <img id="logo" src="@routes.Assets.versioned("images/website-header.png")" alt="Gracen Hoyle.">
-    <ul>
-      <li onclick="showHome()">Home</li>
-      <li onclick="showAbout()">About</li>
-      <li onclick="showProjects()">Projects</li>
-      <li onclick="showPortfolio()">Portfolio</li>
-      <li onclick="showResume()">Resume</li>
-      <li onclick="showContact()">Contact</li>
-    </ul>
-  </div>
-  <br>
-  <hr>
-
-  <div id="content">
-    <div id="home">
-      <p>
-        <img src="@routes.Assets.versioned("images/Gracen_Profile.jpg")" alt="Photo of Gracen Hoyle.">
-        
-        <br>
-        <em>Photo of Gracen Hoyle.</em>
-        <br><br>
-        🎓 Junior at Trinity University
-        <br>
-        💾 Computer Science Major with a Minor in Classical Studies
-        <br>
-        💻 Member of the Lewis Research Lab
-        <br>
-        🎨 Illustrator and Web Assistant for the 2020-2021 Trinitonian
-        <br>
-        📝 Summer 2020 Marketing Intern at <a href="http://filestack.com">Filestack</a>
-        <br>
-        🎮 Aspiring Game Developer and Storyteller
-      </p>
-    </div>
-
-    <div id="about">
-      <h3>About Me</h3>
-      <p>
-        My name is Gracen Hoyle, and I am a junior at Trinity University in San Antonio, Texas.
-        I am a computer science major and a classical studies minor, with an interest in game development and
-        web applications.
-        <br><br>
-        In my spare time, I enjoy playing video games and creating digital and traditional art.
-        I firmly believe that technical knowledge and creativity go hand in hand, and that computer science is an
-        inherently artistic field focused on the creation of software and content. I'm also very interested in the field
-        of virtual reality and the potential it holds, both for creating fiction and helping people explore the world
-        around them.
-      </p>
-      <h3>Notable Experience</h3>
-      <p>
-        I have a few roles while I'm on campus. I work as a marketing intern in Trinity's Center for Experiental
-        Learning and Career Success, helping to advertise events and seminars hosted by the office. This semester
-        I am working at the campus newspaper, the Trinitonian, as a graphic designer and web assistant.
-        In the past semester, I worked as a peer tutor for the Trinity chapter of the Association for Computer Machinery
-        tutoring first-year computer science students.
-        <br><br>
-        In the Computer Science department, I'm a member of Trinity University Women in Computing, a club dedicated to promoting women
-        in development. I also do research in the Lewis Research Lab with Dr. Mark Lewis; we are currently moving a C++ codebase to the Rust
-        programming language and modifying it to run in parallel.
-        <br><br>
-        This past summer, I worked as a marketing intern at Filestack in San Antonio. I did search engine optimization and
-        some web development in Javascript, creating a new chatbot for the Filestack website in HubSpot as well as designing and coding
-        a Zoom background generator to take existing photos and modify them for use in Zoom.
-        <br><br>
-        I have an interest in game development, with many of my past projects being gamified in some way. I am also interested in UI/UX; front-end
-        development fascinates me as a way to connect with those using a given software.
-        <br><br> 
-        To see my full resume, <a onclick="showResume()">click here.</a>
-      </p>
-    </div>
-
-    <div id="projects">
-      <h3>My Projects</h3>
-      <div class="projectDiv" onclick>
-        <a href="https://github.com/glhoyle/glhoyle-dev"><b>glhoyle.dev</b></a>
-        <br>
-        <em>May 2020 - Present</em>
-        <br>
-        <p>
-          This is the GitHub repository for this website!
-        </p>
-      </div>
-      <div class="projectDiv">
-        <a href="https://github.com/ckendric/CSCI3345-DragonHordeClicker"><b>Dragon Horde Clicker</b></a>
-        <br>
-        <em>January 2020 - May 2020</em>
-        <br>
-        <p>
-          This project is an incremental clicker game created for Web Application Design, Spring 2020.
-        </p>
-      </div>
-      <div class="projectDiv">
-        <a href="https://github.com/glhoyle/Enclippy"><b>Enclippy</b></a>
-        <br>
-        <em>January 2020 - May 2020</em>
-        <br>
-        <p>
-          This project is a command-line based file encryption software created for Cybersecurity, Spring 2020.
-        </p>
-      </div>
-      <h3>Research Projects</h3>
-      <div class="projectDiv" onclick>
-        <a href="https://github.com/MarkCLewis/HardSphereCollSims"><b>Hard Sphere Simulation Code</b></a>
-        <br>
-        <em>January 2020 - Present</em>
-        <br>
-        <p>
-          Dr. Mark Lewis's hard sphere physics simulation code. I work on this repository as a research assistant: maintaining legacy code, rewriting the code base in Rust, and refactoring the code to run in parallel.
-        </p>
-      </div>
-    </div>
-
-    <div id="portfolio">
-      <h3>Portfolio</h3>
-      <p>This is my professional portfolio. Click on an image to see it at full size in a new tab.</p>
-      <div id= "portfolio">
-        <h4>Graphic Design</h4>
-        <div id="container">
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/upcoming-events_43638431.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/upcoming-events_43638431.png" alt="Upcoming events flyer for CELCS." width="600" height="400">
-            </a>
-            <div class="desc">A flyer template for upcoming events. Fall 2019.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/I4S+SP19+Social+Media+Flyer.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/I4S+SP19+Social+Media+Flyer.png" alt="Interview for Success event flyer." width="600" height="400">
-            </a>
-            <div class="desc">Event flyer for student interview event. Spring 2019.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/Road+to+the+GRE+Flyer+for+post.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/Road+to+the+GRE+Flyer+for+post.png" alt="GRE Info Session flyer." width="600" height="400">
-            </a>
-            <div class="desc">Event flyer for GRE information session. Fall 2019.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/signed-poster_38209474.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/signed-poster_38209474.png" alt="Senior Event Flyer." width="600" height="400">
-            </a>
-            <div class="desc">Event flyer for Graduation event. Spring 2019.</div>
-          </div>
-        </div>
-        <h4>Published Illustrations</h4>
-        <div id="container">
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/For+The+Record+GH.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/For+The+Record+GH.png" alt="Art parody of album cover for conversations with myself about you by lovelytheband." width="600" height="400">
-            </a>
-            <div class="desc">Album cover parody for music review column. Fall 2020.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/for+the+record+3+gh.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/for+the+record+3+gh.png" alt="Art parody of album cover for Cool Tapes Vol 3 by Jaden." width="600" height="400">
-            </a>
-            <div class="desc">Album cover parody for music review column. Fall 2020.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/For+the+Record+GH.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/For+the+Record+GH.png" alt="Art parody of album cover for Infinitely Ordinary by The Wrecks." width="600" height="400">
-            </a>
-            <div class="desc">Album cover parody for music review column. Fall 2020.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Tribute+to+Chadwick+Boseman+GH.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Tribute+to+Chadwick+Boseman+GH.png" alt="Portrait of Chadwick Boseman." width="600" height="400">
-            </a>
-            <div class="desc">Memorial portrait of Chadwick Boseman for memorial column. Fall 2020.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Danny+Anderson+Guest+Column+GH.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Danny+Anderson+Guest+Column+GH.png" alt="Portrait of Danny Anderson." width="600" height="400">
-            </a>
-            <div class="desc">Portrait of Trinity University president Danny Anderson for opinion column. Fall 2020.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Useless+Degrees+GH.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Useless+Degrees+GH.png" alt="Drawing of a coffee cup sitting on a diploma." width="600" height="400">
-            </a>
-            <div class="desc">Illustration for opinion column. Fall 2020.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Drawing+in+the+Pandemic+GH.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Drawing+in+the+Pandemic+GH.png" alt="A drawing of an iPad." width="600" height="400">
-            </a>
-            <div class="desc">Illustration for arts column. Fall 2020.</div>
-          </div>
-        </div>
-        <h4>Personal Illustrations</h4>
-        <div id="container">
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/en+abel+er.jpg">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/en+abel+er.jpg" alt="A girl using magic circles." width="600" height="400">
-            </a>
-            <div class="desc">Practicing figure drawing and shape effects.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/tenebris+concept+doodle+GLASSES.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/tenebris+concept+doodle+GLASSES.png" alt="Scientist using telepathy to make shapes." width="600" height="400">
-            </a>
-            <div class="desc">Testing shading techniques.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/liz+sketch!1.jpg">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/liz+sketch!1.jpg" alt="Girl yelling at laptop." width="600" height="400">
-            </a>
-            <div class="desc">Posing and perspective practice.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/raster+the+boy.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/raster+the+boy.png" alt="A TV Head doing a peace sign." width="600" height="400">
-            </a>
-            <div class="desc">Acrylic charm design. Gift for a friend.</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/ren+and+vim+3d+soft.png">
-              <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/ren+and+vim+3d+soft.png" alt="Two TV heads hanging out." width="600" height="400">
-            </a>
-            <div class="desc">Practicing anaglyph 3D.</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div id="resume">
-      <h3>Resume</h3>
-      <p>
-        This will always be the most up to date version of my resume.
-      </p>
-      <iframe src="https://drive.google.com/file/d/15x9p-O3GwmU6RKIWkT0tyVjhUIkKQYiE/preview" width="800" height="1000"></iframe>
-    </div>
-
-    <div id="contact">
-      <h3>Contact Me</h3>
-      <p>These are my active social media channels. Feel free to reach out to me any time!</p>
+  <div class="flex-container">
+    <div id="nav">
+      <img id="logo" src="@routes.Assets.versioned("images/website-header.png")" alt="Gracen Hoyle.">
       <ul>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/gracen-hoyle/">Gracen Hoyle</a></li>
-        <li>Github: <a href="https://github.com/glhoyle/">glhoyle</a></li>
-        <li>Email: ghoyle@@trinity.edu</li>
+        <li onclick="showHome()">home</li>
+        <li onclick="showAbout()">about</li>
+        <li onclick="showProjects()">projects</li>
+        <li onclick="showPortfolio()">portfolio</li>
+        <li onclick="showResume()">resume</li>
+        <li onclick="showContact()">contact</li>
       </ul>
+    </div>
+    <br>
+
+    <div id="content">
+      <div id="home">
+        <p>
+          <img src="@routes.Assets.versioned("images/Gracen_Profile.jpg")" alt="Photo of Gracen Hoyle.">
+          
+          <br>
+          <span class="quoteText">Hi! I'm Gracen.</span>
+          <br><br>
+          <span class="aboutText">
+          🎓 Junior at Trinity University
+          <br>
+          💾 Major in Computer Science
+          <br>
+          🏺 Minor in Classical Studies
+          <br>
+          💻 Member of the Lewis Research Lab
+          <br>
+          🎨 Illustrator/Web Assistant at <a href="https://www.trinitonian.com/">The Trinitonian</a>
+          <br>
+          📝 Summer 2020 Marketing Intern at <a href="http://filestack.com">Filestack</a>
+          <br>
+          🎮 Aspiring Game Developer and Storyteller
+          </span>
+        </p>
+      </div>
+
+      <div id="about">
+          <span class="quoteText">My name is Gracen Hoyle, and I'm a junior at Trinity University in San Antonio, Texas.
+          I'm a computer science major and a classical studies minor, with an interest in game development and
+          web design.</span>
+        <p>
+          In my spare time, I enjoy playing video games and creating digital and traditional art.
+          I firmly believe that technical knowledge and creativity go hand in hand, and that computer science is an
+          inherently artistic field focused on the creation of software and content. I'm also very interested in the field
+          of virtual reality and the potential it holds, both for creating fiction and helping people explore the world
+          around them.
+          <br><br>
+          Space has been close to my heart ever since I was a child, and I want my work to ignite the same spark of creativity
+          and wonder that looking into the night sky instilled in me all those years ago.
+        </p>
+        <span class="quoteText">I stay involved, both on campus and in my professional life.</span>
+        <p>
+          I work as a marketing intern in Trinity's Center for Experiental
+          Learning and Career Success, helping to advertise events and seminars hosted by the office. This semester
+          I am working at the campus newspaper, the Trinitonian, as a graphic designer and web assistant.
+          In the past semester, I worked as a peer tutor for the Trinity chapter of the Association for Computer Machinery
+          tutoring first-year computer science students.
+          <br><br>
+          In the Computer Science department, I'm a member of Trinity University Women in Computing, a club dedicated to promoting women
+          in development. I also do research in the Lewis Research Lab with Dr. Mark Lewis; we are currently moving a C++ codebase to the Rust
+          programming language and modifying it to run in parallel.
+          <br><br>
+          This past summer, I worked as a marketing intern at Filestack in San Antonio. I did search engine optimization and
+          some web development in Javascript, creating a new chatbot for the Filestack website in HubSpot as well as designing and coding
+          a Zoom background generator to take existing photos and modify them for use in Zoom.
+          <br><br>
+          I have an interest in game development, with many of my past projects being gamified in some way. I am also interested in UI/UX; front-end
+          development fascinates me as a way to connect with those using a given software.
+        </p>
+          <span class="quoteText">To see my full resume, <a onclick="showResume()">click here.</a></span>
+        <p></p>
+      </div>
+
+      <div id="projects">
+        <span class="quoteText">Here are some repos I've contributed to.</span>
+        <p></p>
+        <div class="projectDiv" onclick>
+          <a href="https://github.com/glhoyle/glhoyle-dev"><b>glhoyle.dev</b></a>
+          <br>
+          <em>May 2020 - Present</em>
+          <br>
+          <p>
+            This is the GitHub repository for this website!
+          </p>
+        </div>
+        <hr>
+        <div class="projectDiv">
+          <a href="https://github.com/ckendric/CSCI3345-DragonHordeClicker"><b>Dragon Horde Clicker</b></a>
+          <br>
+          <em>January 2020 - May 2020</em>
+          <br>
+          <p>
+            This project is an incremental clicker game created for Web Application Design, Spring 2020.
+          </p>
+        </div>
+        <hr>
+        <div class="projectDiv">
+          <a href="https://github.com/glhoyle/Enclippy"><b>Enclippy</b></a>
+          <br>
+          <em>January 2020 - May 2020</em>
+          <br>
+          <p>
+            This project is a command-line based file encryption software created for Cybersecurity, Spring 2020.
+          </p>
+        </div>
+        <span class="quoteText">I'm also a research assistant!</span>
+        <p></p>
+        <div class="projectDiv" onclick>
+          <a href="https://github.com/MarkCLewis/HardSphereCollSims"><b>Hard Sphere Simulation Code</b></a>
+          <br>
+          <em>January 2020 - Present</em>
+          <br>
+          <p>
+            Dr. Mark Lewis's hard sphere physics simulation code. I work on this repository as a research assistant: maintaining legacy code, rewriting the code base in Rust, and refactoring the code to run in parallel.
+          </p>
+        </div>
+      </div>
+
+      <div id="portfolio">
+        <span class="quoteText">This is my professional design portfolio.</span>
+        <p> Click on an image to see it at full size in a new tab.</p>
+        <div id= "portfolio">
+          <h4>graphic design</h4>
+          <div id="container">
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/upcoming-events_43638431.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/upcoming-events_43638431.png" alt="Upcoming events flyer for CELCS." width="600" height="400">
+              </a>
+              <div class="desc">A flyer template for upcoming events. Fall 2019.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/I4S+SP19+Social+Media+Flyer.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/I4S+SP19+Social+Media+Flyer.png" alt="Interview for Success event flyer." width="600" height="400">
+              </a>
+              <div class="desc">Event flyer for student interview event. Spring 2019.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/Road+to+the+GRE+Flyer+for+post.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/Road+to+the+GRE+Flyer+for+post.png" alt="GRE Info Session flyer." width="600" height="400">
+              </a>
+              <div class="desc">Event flyer for GRE information session. Fall 2019.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/signed-poster_38209474.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/graphic-design/signed-poster_38209474.png" alt="Senior Event Flyer." width="600" height="400">
+              </a>
+              <div class="desc">Event flyer for Graduation event. Spring 2019.</div>
+            </div>
+          </div>
+          <h4>published illustrations</h4>
+          <div id="container">
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/For+The+Record+GH.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/For+The+Record+GH.png" alt="Art parody of album cover for conversations with myself about you by lovelytheband." width="600" height="400">
+              </a>
+              <div class="desc">Album cover parody for music review column. Fall 2020.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/for+the+record+3+gh.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/for+the+record+3+gh.png" alt="Art parody of album cover for Cool Tapes Vol 3 by Jaden." width="600" height="400">
+              </a>
+              <div class="desc">Album cover parody for music review column. Fall 2020.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/For+the+Record+GH.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/For+the+Record+GH.png" alt="Art parody of album cover for Infinitely Ordinary by The Wrecks." width="600" height="400">
+              </a>
+              <div class="desc">Album cover parody for music review column. Fall 2020.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Tribute+to+Chadwick+Boseman+GH.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Tribute+to+Chadwick+Boseman+GH.png" alt="Portrait of Chadwick Boseman." width="600" height="400">
+              </a>
+              <div class="desc">Memorial portrait of Chadwick Boseman for memorial column. Fall 2020.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Danny+Anderson+Guest+Column+GH.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Danny+Anderson+Guest+Column+GH.png" alt="Portrait of Danny Anderson." width="600" height="400">
+              </a>
+              <div class="desc">Portrait of Trinity University president Danny Anderson for opinion column. Fall 2020.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Useless+Degrees+GH.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Useless+Degrees+GH.png" alt="Drawing of a coffee cup sitting on a diploma." width="600" height="400">
+              </a>
+              <div class="desc">Illustration for opinion column. Fall 2020.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Drawing+in+the+Pandemic+GH.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/trinitonian/Drawing+in+the+Pandemic+GH.png" alt="A drawing of an iPad." width="600" height="400">
+              </a>
+              <div class="desc">Illustration for arts column. Fall 2020.</div>
+            </div>
+          </div>
+          <h4>personal illustrations</h4>
+          <div id="container">
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/en+abel+er.jpg">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/en+abel+er.jpg" alt="A girl using magic circles." width="600" height="400">
+              </a>
+              <div class="desc">Practicing figure drawing and shape effects.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/tenebris+concept+doodle+GLASSES.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/tenebris+concept+doodle+GLASSES.png" alt="Scientist using telepathy to make shapes." width="600" height="400">
+              </a>
+              <div class="desc">Testing shading techniques.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/liz+sketch!1.jpg">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/liz+sketch!1.jpg" alt="Girl yelling at laptop." width="600" height="400">
+              </a>
+              <div class="desc">Posing and perspective practice.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/raster+the+boy.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/raster+the+boy.png" alt="A TV Head doing a peace sign." width="600" height="400">
+              </a>
+              <div class="desc">Acrylic charm design. Gift for a friend.</div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/ren+and+vim+3d+soft.png">
+                <img src="https://s3.us-east-2.amazonaws.com/portfolio.glhoyle.dev/personal-art/ren+and+vim+3d+soft.png" alt="Two TV heads hanging out." width="600" height="400">
+              </a>
+              <div class="desc">Practicing anaglyph 3D.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="resume">
+        <span class="quoteText">Feel free to check out my resume!</span>
+        <p></p>
+        <iframe src="https://drive.google.com/file/d/15x9p-O3GwmU6RKIWkT0tyVjhUIkKQYiE/preview" width="800" height="1000"></iframe>
+        <p></p>
+      </div>
+
+      <div id="contact">
+        <span class="quoteText">These are my active social media channels.<br>Feel free to reach out to me any time!</span>
+        <div id="container">
+          <div class="socials">
+            <a target="_blank" href="https://www.linkedin.com/in/gracen-hoyle/">
+              <img src="@routes.Assets.versioned("images/linkedin.svg")" alt="LinkedIn icon" width="400" height="400">
+            </a>
+          </div>
+          <div class="socials">
+            <a target="_blank" href="https://github.com/glhoyle/">
+              <img src="@routes.Assets.versioned("images/github.svg")" alt="Github icon" width="400" height="400">
+            </a>
+          </div>
+          <div class="socials">
+            <a target="_blank" href="mailto:ghoyle@@trinity.edu">
+              <img src="@routes.Assets.versioned("images/gmail.svg")" alt="Gmail icon" width="400" height="400">
+            </a>
+            <div class="desc">ghoyle@@trinity.edu</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 }
