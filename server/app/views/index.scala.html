@@ -2,9 +2,9 @@
 
 @main("Gracen Hoyle, Computer Dev") {
   <input type="hidden" id="mainDiv" value="">
+  <div id="logo" class="center"><img src="@routes.Assets.versioned("images/website-header.png")" alt="Gracen Hoyle."></div>
   <div class="flex-container">
-    <div id="nav">
-      <img id="logo" src="@routes.Assets.versioned("images/website-header.png")" alt="Gracen Hoyle.">
+    <div id="nav" class="center">
       <ul>
         <li onclick="showHome()">home</li>
         <li onclick="showAbout()">about</li>
@@ -17,34 +17,33 @@
     <br>
 
     <div id="content">
-      <div id="home">
+      <div id="home" class="center">
         <p>
-          <img src="@routes.Assets.versioned("images/Gracen_Profile.jpg")" alt="Photo of Gracen Hoyle.">
+          <img src="@routes.Assets.versioned("images/gh_headshot.jpg")" alt="Photo of Gracen Hoyle.">
           
           <br>
           <span class="quoteText">Hi! I'm Gracen.</span>
           <br><br>
           <span class="aboutText">
-          🎓 Junior at Trinity University
+          🎓 Senior at Trinity University
           <br>
           💾 Major in Computer Science
           <br>
           🏺 Minor in Classical Studies
           <br>
-          💻 Marketing Assistant at the Center for Experiential Learning and Career Success
+          💻 Marketing Assistant at Trinity CELCS
           <br>
           🎨 Newsletter Editor and Illustrator at <a href="https://www.trinitonian.com/">The Trinitonian</a>
           <br>
           📝 Summer 2021 IT Intern at <a href="http://usaa.com">USAA</a>
           <br>
-          🎮 Aspiring Storyteller
+          ✏ Artist, Storyteller, Creative
           </span>
         </p>
       </div>
 
-      <div id="about">
-          <span class="quoteText">My name is Gracen Hoyle, and I'm a junior at Trinity University in San Antonio, Texas.
-          I'm a computer science major and a classical studies minor, with an interest in game development and
+      <div id="about" class="center">
+          <span class="quoteText">My name is Gracen Hoyle. I'm a computer science major and a classical studies minor, with an interest in game development and
           web design.</span>
         <p>
           In my spare time, I enjoy playing video games and creating digital and traditional art.
@@ -59,28 +58,27 @@
         <span class="quoteText">I stay involved, both on campus and in my professional life.</span>
         <p>
           I work as a marketing intern in Trinity's Center for Experiental
-          Learning and Career Success, helping to advertise events and seminars hosted by the office. This semester
-          I am working at the campus newspaper, the Trinitonian, as the Newsletter Editor and an illustrator on the Visuals team.
+          Learning and Career Success, helping to advertise events and seminars hosted by the office. I'm working at the campus newspaper, the Trinitonian,
+          as the Newsletter Editor and an illustrator on the Visuals team for 2021-2022.
           In the past, I've worked as a peer tutor for the Trinity chapter of the Association for Computer Machinery
           tutoring first-year computer science students.
           <br><br>
           In the Computer Science department, I'm a member of Trinity University Women in Computing, a club dedicated to promoting women
-          in development.
+          in development. This upcoming academic year, I will be doing my senior capstone project.
           <br><br>
-          I am a member of the upcoming USAA Summer 2021 Intern cohort. I will be working at the San Antonio office as an IT Intern.
+          I am a member of the USAA Summer 2021 Intern cohort. I am working remotely for the San Antonio office as an IT Intern.
           <br><br>
-          This past summer, I worked as a marketing intern at Filestack in San Antonio. I did search engine optimization and
+          Last summer, 2020, I worked as a marketing intern at Filestack in San Antonio. I did search engine optimization and
           some web development in Javascript, creating a new chatbot for the Filestack website in HubSpot as well as designing and coding
           a Zoom background generator to take existing photos and modify them for use in Zoom.
           <br><br>
           I have an interest in game development, with many of my past projects being gamified in some way. I am also interested in UI/UX; front-end
           development fascinates me as a way to connect with those using a given software.
         </p>
-          <span class="quoteText">To see my full resume, <a onclick="showResume()">click here.</a></span>
         <p></p>
       </div>
 
-      <div id="projects">
+      <div id="projects" class="center">
         <span class="quoteText">Here are some repos I've contributed to.</span>
         <p></p>
         <div class="projectDiv" onclick>
@@ -122,20 +120,19 @@
             This project is a command-line based file encryption software created for Cybersecurity, Spring 2020.
           </p>
         </div>
-        <span class="quoteText">I'm also a research assistant!</span>
-        <p></p>
+        <hr>
         <div class="projectDiv" onclick>
           <a href="https://github.com/MarkCLewis/HardSphereCollSims"><b>Hard Sphere Simulation Code</b></a>
           <br>
           <em>January 2020 - December 2020</em>
           <br>
           <p>
-            Dr. Mark Lewis's hard sphere physics simulation code. I work on this repository as a research assistant: maintaining legacy code, rewriting the code base in Rust, and refactoring the code to run in parallel.
+            Dr. Mark Lewis's hard sphere physics simulation code. I worked on this repository as a research assistant: maintaining legacy code, rewriting the code base in Rust, and refactoring the code to run in parallel.
           </p>
         </div>
       </div>
 
-      <div id="portfolio">
+      <div id="portfolio" class="center">
         <span class="quoteText">This is my professional design portfolio.</span>
         <p> Click on an image to see it at full size in a new tab.</p>
         <div id= "portfolio">
@@ -248,29 +245,29 @@
 
       </div>
 
-      <div id="resume">
+      <div id="resume" class="center">
         <span class="quoteText">Feel free to check out my resume!</span>
         <p></p>
         <iframe src="https://drive.google.com/file/d/15x9p-O3GwmU6RKIWkT0tyVjhUIkKQYiE/preview" width="800" height="1000"></iframe>
         <p></p>
       </div>
 
-      <div id="contact">
+      <div id="contact" class="center">
         <span class="quoteText">These are my active social media channels.<br>Feel free to reach out to me any time!</span>
         <div id="container">
           <div class="socials">
             <a target="_blank" href="https://www.linkedin.com/in/gracen-hoyle/">
-              <img src="@routes.Assets.versioned("images/linkedin.svg")" alt="LinkedIn icon" width="400" height="400">
+              <img src="@routes.Assets.versioned("images/linkedin.svg")" alt="LinkedIn icon" width="200" height="200">
             </a>
           </div>
           <div class="socials">
             <a target="_blank" href="https://github.com/glhoyle/">
-              <img src="@routes.Assets.versioned("images/github.svg")" alt="Github icon" width="400" height="400">
+              <img src="@routes.Assets.versioned("images/github.svg")" alt="Github icon" width="200" height="200">
             </a>
           </div>
           <div class="socials">
             <a target="_blank" href="mailto:ghoyle@@trinity.edu">
-              <img src="@routes.Assets.versioned("images/gmail.svg")" alt="Gmail icon" width="400" height="400">
+              <img src="@routes.Assets.versioned("images/gmail.svg")" alt="Gmail icon" width="200" height="200">
             </a>
             <div class="desc">ghoyle@@trinity.edu</div>
           </div>
